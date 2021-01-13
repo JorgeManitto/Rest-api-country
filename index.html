@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>JorgeManitto</title>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <h3 class="title"><a href="./index.html">Where in the world?</a></h3>
+        <h3 class="change_mode">
+            <input type="checkbox" name="mode" id="dark_mode">
+            <label for="mode">Dark Mode</label>
+            
+        </h3>
+    </div>
+   <div class="conteiner" id="conteiner">
+    <div class="conteiner_a">
+
+        <div class="content_input">
+            <input type="text" placeholder="Search for a country" id="input" class="input">
+        </div>
+        <div class="content_select">
+            <select name=""  id="select" class="select">
+              
+                <option value="all">All</option>
+                <option value="Africa" >Africa</option>
+                <option value="Americas">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div> 
+    </div>
+
+    <div class="conteiner_b">
+        <div id="demo" class="demo"></div>
+        <div id="modal" class="modal">
+            <button onclick="btn_back()" class="btn_back">Back</button>
+        </div>
+    </div>
+   </div>
+    <script src="traerdatos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

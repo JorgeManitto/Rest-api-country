@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 92%);
+    font-family: 'Nunito Sans', sans-serif;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    background-color:hsl(0, 0%, 100%);
+}
+.conteiner{
+    background-color: hsl(0, 0%, 92%);
+    padding-top: 5%;
+    height: 100%;
+}
+.conteiner_a{
+    width: 80vw;
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    margin-left: 5em;
+}
+.title a{
+    text-decoration: none;
+    color: #000;
+}
+.change_mode{
+    margin-right: 5em;
+}
+.input{
+    margin-top: 1em;
+    width: 25em;
+    height: 2em;
+    border: none;
+    border-radius: 1em;
+}
+.select{
+    margin-top: 1em;   
+    height: 2em;
+    border: none;
+}
+.demo{
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(15.625em, 1fr) );
+}
+
+.flag{
+    width: 16em;
+    height: 10em;
+    object-fit:cover ;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.content{
+    border-radius: 1em;
+    cursor: pointer;
+    margin: 1em auto;
+    background-color:hsl(0, 0%, 98%) ;
+}
+.modal{
+    position: fixed;
+    height: 93vh;
+    width: 100%;
+    background-color:  hsl(0, 0%, 92%);
+    top: 0;
+    margin-top: 4.5%;
+    z-index: 999;
+    display: none;
+    overflow-y: hidden;
+     
+}
+.flag_modal{
+    width: 40%;
+    height: 30%;
+}
+.country_name{
+    color: hsl(200, 15%, 8%);
+}
+.content_modal{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.country_data_modal{
+    margin-right: 10%;
+}
+.btn_back{
+    margin-top: 2.5em;
+    margin-left: 5em;
+}
+.dark-mode{
+    background-color: hsl(207, 26%, 17%);
+    color: white;
+}
+.dark-mode-content{
+    background-color: hsl(209, 23%, 22%);
+    
+}
+.dark-mode-nav{
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+.dark-mode-nav h3 a{
+    color: white;
+}
+.country_name{
+    margin: 1em 0 ;
+}
+.data_country ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2em;
+}
+.country_name,.data_country{
+    margin-left: 1em;
+}
+
+.dark-mode-content h4 {
+    color: white;
+}
+.modal_active{
+    overflow-y: hidden;
+}
+@media only screen and (max-width: 375px) {
+    .nav{
+        padding-top: 1em;
+    }
+    .conteiner_a{
+        width: 100%;
+        margin: 3em 0;
+    }
+    .title,.change_mode{
+        margin: 0;     
+    }
+    .demo {
+    margin: 0 auto;
+    }
+    .input{
+        width: 15em;
+    }
+    .select{
+        margin-right: 1em;
+    }
+    .content_modal{
+        display: block;
+        margin-left: 2em;
+    }
+    .btn_back{
+        margin: .5em 0;
+    }
+    .modal{
+        margin-top: 15%;
+        height: 100%;
+    }
+  }
+  @media screen and (max-width: 900px) and (min-width: 376px){
+    .title{
+        margin: 0 1em;     
+    }
+    .change_mode{
+        margin-top: 0;
+        margin-right: 6em;
+    }
+    .nav{
+        padding-top: 1em;
+    }
+    .modal{
+
+        margin-top: 10%;
+        height: 100%;
+    }
+    .conteiner_a{
+        width: 100%;
+        margin: 3em 0;
+    }
+    .input{
+        width: 15em;
+        margin-left: 2em;
+    }
+    .select{
+        margin-right: 1em;
+        margin-right: 2em;
+    }
+  }
